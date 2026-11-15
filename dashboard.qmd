@@ -1,0 +1,19 @@
+—
+title: “Penguins”
+format: dashboard
+—
+
+```{r}
+library (palmerpenguins)
+library (ggplot2)
+pngns <- penguins
+```
+
+
+```{r}
+ggplot (data = pngns, mpg = aes (x = species)) + geom_bar()
+```
+
+```{r}
+ggplot (data = pngns, mpg = aes (x = species, fill = islands)) + geom_bar()
+```
