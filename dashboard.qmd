@@ -1,3 +1,6 @@
+# install.packages("remotes")
+remotes::install_github("allisonhorst/palmerpenguins")
+
 —
 title: “Penguins”
 format: dashboard
