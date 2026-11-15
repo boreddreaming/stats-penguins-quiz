@@ -1,9 +1,32 @@
-
-# install.packages("remotes")
-remotes::install_github("allisonhorst/palmerpenguins")
-
-```r
-# Using the rsconnect package
-install.packages("rsconnect")
-rsconnect::writeManifest()
-```
+{
+  "name": "palmerpenguins",
+  "title": "Palmer Archipelago (Antarctica) Penguin Data",
+  "version": "0.1.1",
+  "license": "CC0-1.0",
+  "description": "Size measurements for adult foraging Adélie, Chinstrap, and Gentoo penguins observed on islands in the Palmer Archipelago near Palmer Station, Antarctica.",
+  "sources": [
+    {
+      "title": "Palmer Station Antarctica LTER",
+      "author": "Dr. Kristen Gorman"
+    }
+  ],
+  "resources": [
+    {
+      "name": "penguins",
+      "path": "penguins.csv",
+      "format": "csv",
+      "schema": {
+        "fields": [
+          { "name": "species", "type": "string" },
+          { "name": "island", "type": "string" },
+          { "name": "bill_length_mm", "type": "number" },
+          { "name": "bill_depth_mm", "type": "number" },
+          { "name": "flipper_length_mm", "type": "integer" },
+          { "name": "body_mass_g", "type": "integer" },
+          { "name": "sex", "type": "string" },
+          { "name": "year", "type": "integer" }
+        ]
+      }
+    }
+  ]
+}
