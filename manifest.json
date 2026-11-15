@@ -1,3 +1,7 @@
+
+# install.packages("remotes")
+remotes::install_github("allisonhorst/palmerpenguins")
+
 ```r
 # Using the rsconnect package
 install.packages("rsconnect")
